@@ -1,0 +1,98 @@
+<html>
+<head>
+   <head> 
+     
+     <script>
+          alert ("Tools ini sedang dalam uji coba maaf jika ada error atau non fungsi di salah satu bagian ( jika menemukan silahkan lapor)")
+         
+      </script>
+     <meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=, maximum-scale=0, user-scalable=0' 
+/>
+ 
+      <title>MUNEN CALCULATOR</title>
+   </head>
+  
+
+<style>
+body{
+background:#0CCDA3;
+}
+*{
+box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+}
+.wrap{
+width:1300px;
+margin:auto;
+height:2600PX;
+background: linear-gradient(50deg, #00FFFF,black);
+padding:40px;
+border-radius: 10px;
+box-shadow: 1px 5px 10px black
+}
+input[type=text]{
+width:100%;
+padding:70px;
+font-size:70px;
+font-height:bold;
+margin-top:20px;
+border-radius:5px;
+}
+input[type=button]{
+width:90px;
+padding:148.8px;
+font-size:65px;
+font-height:bold;
+border-radius:5px;
+}
+#del{
+width:45%;
+}
+#pangkat{
+width:54.5%;
+}
+
+</style>
+</head>
+<div class="Wrap">
+<form name ="cal">
+<input type="text" name ="display">
+<br><br>
+<input type="button" value ="9" onclick ="cal.display.value+='9'">
+<input type="button" value ="8" onclick ="cal.display.value+='8'">
+<input type="button" value ="7" onclick ="cal.display.value+='7'">
+<input type="button" value ="+" onclick ="cal.display.value+='+'">
+<br><br>
+<input type="button" value ="6" onclick ="cal.display.value+='6'">
+<input type="button" value ="5" onclick ="cal.display.value+='5'">
+<input type="button" value ="4" onclick ="cal.display.value+='4'">
+<input type="button" value ="-" onclick ="cal.display.value+='-'">
+<br><br>
+<input type="button" value ="3" onclick ="cal.display.value+='3'">
+<input type="button" value ="2" onclick ="cal.display.value+='2'">
+<input type="button" value ="1" onclick ="cal.display.value+='1'">
+<input type="button" value ="X" onclick ="cal.display.value+='*'">
+<br><br>
+<input type="button" value ="0" onclick ="cal.display.value+='0'">
+<input type="button" value ="/" onclick ="cal.display.value+='/'">
+<input type="button" value ="%" onclick ="cal.display.value+='%'">
+<input type="button" value ="=" onclick ="cal.display.value =eval(cal.display.value)">
+<br><br>
+<input type="button" value ="HAPUS" onclick ="cal.display.value=''" id="del">
+<input type="button" value ="PANGKAT" onclick ="cal.display.value+='**'"id ="pangkat" >
+</form>
+<body>
+<font size="6"><center>👑 BONGGO MUNEN CALCULATOR 👑</center></font><br>
+<center>
+  <a href="https://contact.bonggomunen.repl.co/">
+<button
+style="background:#32C03C;vertical-align:center;height:3opx;width:50%;padding:60px;font-size:35px;;">LAPORKAN BUG </button> </a>
+</div>
+</center>
+</body>
+             
+</body>
+</html>

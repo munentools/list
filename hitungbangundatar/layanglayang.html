@@ -1,0 +1,63 @@
+ <html>
+<head>
+<title>Luas dan Keliling Layang-layang</title>
+<style>
+                input.btn
+                                {color: white;
+                                background: black;
+                                border: 1px outset black;
+                                font-family: "calibri", Times, serif;
+                                font-size: 14px;
+                                font-weight: bold;
+                                width : auto;}
+                </style>
+</head>
+<body background="images/15.jpg"
+<body>
+<center><br></br><br></br><br></br>
+<b><font color="black" size="5">
+<p>Luas dan Keliling Layang-layang</p>
+<form id="Formulir" name="formulir" method="post" action="">
+                <table width="500" border="0">
+                <tr>
+                <td width="178"><b><font color="black" size="3">Masukan sisi panjang</td>
+                <td><input name="sisi1" type="text" id="sisi1"></td>
+                </tr>
+                <tr>
+                <td width="178"><b><font color="black" size="3">Masukan sisi pendek</td>
+                <td><input name="sisi2" type="text" id="sisi2"></td>
+                </tr>
+                <tr>
+                <td width="178"><b><font color="black" size="3">Masukan diagonal 1</td>
+                <td><input name="d1" type="text" id="d1"></td>
+                </tr>
+                <tr>
+                <td width="178"><b><font color="black" size="3">Masukan diagonal 2</td>
+                <td><input name="d2" type="text" id="d2"></td>
+                </tr>
+                <tr>
+                <td><b><font color="black" size="3">Hasil Penghitungan Luas</td>
+                <td><input name="luas" type="text" id="luas"></td>
+                </tr>
+                <tr>
+                <td><b><font color="black" size="3">Hasil Penghitungan Keliling</td>
+                <td><input name="keliling" type="text" id="keliling"></td>
+                </tr>
+</table>
+<p>
+<input name="cari" type="button" id="cari" value="hitung" class="btn"
+onclick="cariluas()"/>
+</p>
+</form>
+<p>&nbsp;</p>
+<script laguage="javascript">
+function cariluas()
+{
+sisi1=formulir.sisi1.value;
+sisi2=formulir.sisi2.value;
+d1=formulir.d1.value;
+d2=formulir.d2.value;
+formulir.keliling.value=2*sisi1+2*sisi2;
+formulir.luas.value=0.5*d1*d2;
+}
+</script></body></html>
